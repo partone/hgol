@@ -6,6 +6,7 @@
 
 * {
     font-family: 'Uchen', serif;
+    color: var(--white);
 }
 
 html, body {
@@ -15,13 +16,15 @@ html, body {
     cursor: default;
 }
 
+body {
+    padding-bottom: 150px;
+    background-color: var(--primary);
+}
 
 /* Landing */
 
 #landing {
-    background-color: var(--primary);
     width: 100%;
-    height: 100vh;
     display: flex;
     flex-wrap: wrap;
 }
@@ -38,23 +41,63 @@ html, body {
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
+}
+
+#filmTitleAndWreath {
+    margin-top: 100px;
+}
+
+#filmPosterContainer {
     justify-content: center;
+    position: fixed;
+    margin-left: 50%;
+    height: 100vh;
 }
 
 #filmWreath {
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 #filmWreath img {
     width: 300px;
 }
 
+#filmPoster {
+    width: 40%;
+}
+
 #filmPoster img {
-    width: 600px;
+    width: 100%;
     box-shadow: 13px 13px 10px 0 rgb(0 0 0 / 20%), -13px -13px 11px 0 rgb(0 0 0 / 20%);
 }
 
 #filmReviews {
     color: white;
     font-size: 25px;
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+#filmCast {
+    text-align: center;
+    font-size: 25px;
+}
+
+#starringText {
+    font-size: 20px;
+}
+
+#directorText {
+    margin-bottom: 20px;
+}
+
+#filmCast {
     margin-bottom: 100px;
+}
+
+#premierText {
+    text-align: center;
+    font-size: 30px;
 }
